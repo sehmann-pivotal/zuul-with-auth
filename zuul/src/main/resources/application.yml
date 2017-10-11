@@ -8,3 +8,5 @@ zuul:
   routes:
     external:
       url: http://placekitten.com
+    internal:
+      url: ${INTERNAL_APP_URL:http://localhost:9999}

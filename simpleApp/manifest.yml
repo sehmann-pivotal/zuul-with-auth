@@ -1,0 +1,4 @@
+---
+applications:
+ - name: verify-sare
+   path: build/libs/simpleApp.jar

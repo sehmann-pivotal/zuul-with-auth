@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Verify Me</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body>
+<h1>Greeting</h1>
+<div th:if="${authenticated}">
+    <p>You are logged in</p>
+</div>
+<div th:if="!${authenticated}">
+    <p>Login to see your greeting</p>
+</div>
+</body>
+</html>
