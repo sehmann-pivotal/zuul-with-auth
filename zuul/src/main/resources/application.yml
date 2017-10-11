@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zuul-sare
+  thymeleaf:
+    cache: false
+
+zuul:
+  routes:
+    external:
+      url: http://placekitten.com

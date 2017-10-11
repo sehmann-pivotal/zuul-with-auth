@@ -1,0 +1,4 @@
+---
+applications:
+ - name: zuul-sare
+   path: build/libs/zuul.jar
