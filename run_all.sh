@@ -1,2 +1,2 @@
-cd zuul && ./gradlew clean bootrun &
-cd simpleApp && ./gradlew clean bootrun &
+cd zuul && SPRING_PROFILES_ACTIVE=local ./gradlew clean bootrun &
+cd simpleApp && SPRING_PROFILES_ACTIVE=local ./gradlew clean bootrun &

@@ -28,7 +28,11 @@ ext {
 dependencies {
     compile(
             'org.springframework.cloud:spring-cloud-starter-zuul',
-            'org.springframework.boot:spring-boot-starter-thymeleaf'
+            'org.springframework.cloud:spring-cloud-starter-oauth2',
+            'org.springframework.cloud:spring-cloud-cloudfoundry-connector',
+            'io.pivotal.spring.cloud:spring-cloud-sso-connector:2.1.1.RELEASE',
+            'org.springframework.security.oauth:spring-security-oauth2:2.2.0.RELEASE',
+            'org.springframework.boot:spring-boot-starter-thymeleaf',
     )
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

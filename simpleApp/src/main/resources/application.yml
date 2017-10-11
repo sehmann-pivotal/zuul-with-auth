@@ -3,5 +3,6 @@ spring:
     name: verify-sare
   thymeleaf:
     cache: false
+
 server:
   port: 9999
