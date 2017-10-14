@@ -1,4 +1,10 @@
 ---
 applications:
- - name: verify-sare
-   path: build/libs/simpleApp.jar
+  - name: verify-sare
+    path: build/libs/simpleApp.jar
+    services:
+    - sare-sso
+    env:
+      GRANT_TYPE: authorization_code
+      SSO_IDENTITY_PROVIDERS: uaa
+      SSO_SCOPES: openid

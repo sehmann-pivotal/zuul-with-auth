@@ -6,3 +6,25 @@ spring:
 
 server:
   port: 9999
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+
+---
+spring:
+  profiles: local
+
+security:
+  oauth2:
+    resource:
+      jwk:
+        key-set-uri: https://uaa-only.login.run.pez.pivotal.io/token_keys
+    client:
+      accessTokenUri: https://uaa-only.login.run.pez.pivotal.io/oauth/token
+      userAuthorizationUri: https://uaa-only.login.run.pez.pivotal.io/oauth/authorize
+      clientId: XXXX
+      clientSecret: XXXX
+
+ssoServiceUrl: https://uaa-only.login.run.pez.pivotal.io
