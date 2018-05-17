@@ -4,7 +4,8 @@ Set up Zuul to handle OAuth with Pivotal SSO tile, to ensure authentication befo
 
 ## Running Locally
 
-1. Modify `application.yml` to use the `clientId` and `clientSecret` from your p-identity instance
+1. Modify `application.yml` to use the `clientId` and `clientSecret` and change all the access URLs to match the properties
+   from your p-identity instance
 1. Run `./run_all.sh`
 1. Visit [Zuul](http://localhost:8080) to view splash page
 1. Visit [Simple App](http://localhost:9999) to view simpleApp

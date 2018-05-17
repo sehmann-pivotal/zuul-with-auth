@@ -9,6 +9,7 @@
 .project
 .settings
 .springBeans
+.java-version
 
 ### IntelliJ IDEA ###
 .idea
