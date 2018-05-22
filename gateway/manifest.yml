@@ -1,0 +1,10 @@
+---
+applications:
+ - name: zuul-sare
+   path: build/libs/zuul.jar
+   services:
+   - sare-sso
+   env:
+     GRANT_TYPE: authorization_code
+     SSO_IDENTITY_PROVIDERS: uaa
+     SSO_SCOPES: openid

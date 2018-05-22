@@ -1,11 +1,9 @@
 spring:
   application:
-    name: verify-sare
-  thymeleaf:
-    cache: false
+    name: auth-sare
 
 server:
-  port: 9999
+  port: 5555
 
 logging:
   level:

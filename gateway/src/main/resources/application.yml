@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: gateway-sare
+  thymeleaf:
+    cache: false
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: external
+        predicates:
+        - Path=/external/**
+        uri: http://placekitten.com
+        filters:
+        - StripPrefix=1
+      - id: internal
+        predicates:
+        - Path=/internal/**
+        uri: ${INTERNAL_APP_URL:http://localhost:9999}
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG

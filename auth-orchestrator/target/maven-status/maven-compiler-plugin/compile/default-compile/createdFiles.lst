@@ -1,0 +1,5 @@
+META-INF/spring-configuration-metadata.json
+com/example/AppConfig.class
+com/example/ClientResources.class
+com/example/SocialApplication.class
+com/example/AppController.class
