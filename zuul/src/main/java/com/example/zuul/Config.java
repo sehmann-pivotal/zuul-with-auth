@@ -11,9 +11,8 @@ import org.springframework.security.web.access.ExceptionTranslationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 @Configuration
-@Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
+@Order(SecurityProperties.BASIC_AUTH_ORDER)
 public class Config extends WebSecurityConfigurerAdapter {
-
     @Autowired
     private OAuth2ClientContextFilter oauth2ClientContextFilter;
 

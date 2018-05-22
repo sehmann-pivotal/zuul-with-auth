@@ -5,7 +5,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,10 +14,10 @@ import java.net.MalformedURLException;
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
-    public String index(Model model) {
-        return "index";
-    }
+//    @GetMapping("/")
+//    public String index(Model model) {
+//        return "index";
+//    }
 
     @Value("${ssoServiceUrl:placeholder}")
     private String ssoServiceUrl;

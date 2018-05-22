@@ -10,12 +10,21 @@ security:
     enabled: false
   require_ssl: false
 
-zuul:
-  routes:
-    external:
-      url: http://placekitten.com
-    internal:
-      url: ${INTERNAL_APP_URL:http://localhost:9999}
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: external
+        predicates:
+        - Path=/external/
+        uri: http://placekitten.com/
+        filters:
+        - StripPrefix=1
+      - id: internal
+        predicates:
+        - Path=/internal/**
+        uri: ${INTERNAL_APP_URL:http://localhost:9999}
+
 
 logging:
   level:

@@ -10,6 +10,9 @@
 .settings
 .springBeans
 .java-version
+.pairs
+.DS_Store
+*/out/*
 
 ### IntelliJ IDEA ###
 .idea
